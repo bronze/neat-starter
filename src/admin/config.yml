@@ -17,7 +17,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "src/about.yml"
+        file: "src/about.html"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
