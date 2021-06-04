@@ -17,7 +17,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "src/about.html"
+        file: "src/about/about.html"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Path, name: path, widget: string}
