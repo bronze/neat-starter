@@ -20,7 +20,8 @@ collections:
         file: "src/about.html"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Path, name: path, widget: string}
+          - {label: Content, name: content, widget: markdown}
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
