@@ -1,6 +1,6 @@
 items:
   - text: Page One
-    url: "#"
+    url: /about/
   - text: Page Two
     url: "#"
   - text: Menu Three
