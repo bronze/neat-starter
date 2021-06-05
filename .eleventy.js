@@ -42,6 +42,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
   // Copy Javascript Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/js");
+  // Copy Javascript Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/css");
 
 
   // Minify HTML
@@ -62,6 +64,7 @@ module.exports = function (eleventyConfig) {
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
+    passthroughFileCopy: true,
     dir: {
       input: "src",
     },

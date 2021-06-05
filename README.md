@@ -5,9 +5,9 @@
     - Issue: https://github.com/alpinejs/alpine/pull/568
  - Pages layout chooser
  - 11ty navigation plugin: https://www.11ty.dev/docs/plugins/navigation/
+ - Sticky (smaller) nav?
 
  TODO:
- - Sticky (smaller) nav?
  - Dark Mode (Nord Colors: https://www.nordtheme.com/#swatches)
  - Refactor css with newer variables options
  - Pages layout chooser (automatic layout listing?)
