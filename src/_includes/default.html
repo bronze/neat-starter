@@ -32,11 +32,11 @@
     {% endif %}
 
     {% if myProject.environment == "production" %}
-    PRODUCTION
-    <script src="/static/js/instantclick.min.js" data-no-instant></script>
-    <script data-no-instant>InstantClick.init();</script>
+      PRODUCTION
+      <script src="/static/js/instantclick.min.js" data-no-instant></script>
+      <script data-no-instant>InstantClick.init();</script>
     {% else %}
-    DEVELOPMENT
+      dev
     {% endif %}
   </body>
 </html>
