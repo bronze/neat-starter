@@ -30,6 +30,7 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
+    "./node_modules/alpine-turbo-drive-adapter/dist/alpine-turbo-drive-adapter.js": "./static/js/alpine-turbo-drive-adapter.js",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
       "./static/css/prism-tomorrow.css",

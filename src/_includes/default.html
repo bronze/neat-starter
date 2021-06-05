@@ -19,16 +19,20 @@
   <body>
 
     {% include "./partials/nav.html" %}
+    <section id="middle">
     {% if myProject.environment == "production" %}
       <div>PRODUCTION</div>
     {% else %}
       <div>DEVELOPMENT</div>
     {% endif %}
-    {{ layoutContent | safe }}
 
+      {{ layoutContent | safe }}
+    </section>
     {% include "./partials/footer.html" %}
 
-    <script src="/static/js/alpine.js" data-no-instant></script>
+    <script src="/static/js/alpine-turbo-drive-adapter.js" ></script>
+    <script src="/static/js/alpine.js" ></script>
+    <script src="/static/js/scripts.js" ></script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
