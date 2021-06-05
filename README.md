@@ -7,14 +7,16 @@
  - 11ty navigation plugin: https://www.11ty.dev/docs/plugins/navigation/
 
  TODO:
- - Dark Mode
+ - Sticky (smaller) nav?
+ - Dark Mode (Nord Colors: https://www.nordtheme.com/#swatches)
+ - Refactor css with newer variables options
  - Pages layout chooser (automatic layout listing?)
 
 Blog @ https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss
 
 # Neat Starter
 
-Starter Template for **N**etlify CMS, **E**leventy, **A**lphine JS & **T**ailwind CSS
+Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
 
 ## Live Demo
 
