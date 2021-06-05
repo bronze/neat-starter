@@ -1,13 +1,13 @@
 # Local changes:
  - Added a Pages layout for regular html content
- - Instantclick: https//instantclick.io/
+ - Instantclick: http://instantclick.io/
 
  TODO:
  - Dark Mode
  - Pages layout chooser?
  - 11ty navigation plugin: https://www.11ty.dev/docs/plugins/navigation/
 
-
+Blog @ https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss
 
 # Neat Starter
 
