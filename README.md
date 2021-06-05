@@ -1,3 +1,14 @@
+# Local changes:
+ - Added a Pages layout for regular html content
+
+ TODO:
+ - Dark Mode
+ - Instantclick: https//instantclick.io/
+ - Layout chooser?
+ - 11ty navigation plugin: https://www.11ty.dev/docs/plugins/navigation/
+
+
+
 # Neat Starter
 
 Starter Template for **N**etlify CMS, **E**leventy, **A**lphine JS & **T**ailwind CSS
