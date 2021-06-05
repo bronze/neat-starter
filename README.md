@@ -1,10 +1,10 @@
 # Local changes:
  - Added a Pages layout for regular html content
+ - Instantclick: https//instantclick.io/
 
  TODO:
  - Dark Mode
- - Instantclick: https//instantclick.io/
- - Layout chooser?
+ - Pages layout chooser?
  - 11ty navigation plugin: https://www.11ty.dev/docs/plugins/navigation/
 
 
