@@ -2,14 +2,16 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
+  // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
-
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
-
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
@@ -19,7 +21,6 @@ module.exports = function (eleventyConfig) {
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
-
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) =>
@@ -36,10 +37,11 @@ module.exports = function (eleventyConfig) {
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
-  eleventyConfig.addPassthroughCopy("./src/static/js");
-
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  // Copy Javascript Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/js");
+
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
