@@ -18,8 +18,3 @@ window.addEventListener('resize', function() {
   timeout = setTimeout(middleHeight, delay);
 });
 middleHeight();
-
-window.addEventListener("scroll", function(){
-  var header = document.querySelector("nav");
-  header.classList.toggle("sticky", window.scrollY > 0);
-})
