@@ -1,6 +1,8 @@
 # Local changes:
  - Added a Pages layout for regular html content
  - Instantclick: http://instantclick.io/
+    - Needs https://github.com/SimoTod/alpine-turbo-drive-adapter (WTF?)
+    - Issue: https://github.com/alpinejs/alpine/pull/568
 
  TODO:
  - Dark Mode

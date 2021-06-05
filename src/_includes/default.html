@@ -34,12 +34,6 @@
     <script src="/static/js/alpine.js" ></script>
     <script src="/static/js/scripts.js" ></script>
 
-    {% if path == "home" %}
-      <!-- Netlify Identity Widget -->
-      <!-- Needed only if you are using Netlify Identity feature -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js" data-no-instant></script>
-    {% endif %}
-
     {% if myProject.environment == "production" %}
       <script src="/static/js/instantclick.min.js" data-no-instant></script>
       <script data-no-instant>InstantClick.init();</script>
