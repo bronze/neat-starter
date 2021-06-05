@@ -24,8 +24,6 @@
     {% include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
-    <script src="/static/js/instantclick.min.js" data-no-instant></script>
-    <script data-no-instant>InstantClick.init();</script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
@@ -33,5 +31,7 @@
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
 
+    <script src="/static/js/instantclick.min.js" data-no-instant></script>
+    <script data-no-instant>InstantClick.init();</script>
   </body>
 </html>
