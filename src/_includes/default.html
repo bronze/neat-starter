@@ -18,7 +18,11 @@
   </head>
   <body>
     {% include "./partials/navbar.html" %}
-
+    {% if myProject.environment == "production" %}
+      <div>PRODUCTION</div>
+    {% else %}
+      <div>DEVELOPMENT</div>
+    {% endif %}
     {{ layoutContent | safe }}
 
     {% include "./partials/footer.html" %}
@@ -32,11 +36,8 @@
     {% endif %}
 
     {% if myProject.environment == "production" %}
-      PRODUCTION
       <script src="/static/js/instantclick.min.js" data-no-instant></script>
       <script data-no-instant>InstantClick.init();</script>
-    {% else %}
-      dev
     {% endif %}
   </body>
 </html>
