@@ -19,7 +19,7 @@ collections:
     label: "Pages"
     folder: "src/pages/"
     create: false # Change to true to allow editors to create new pages
-
+    slug: "{{slug}}"
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Path, name: path, widget: string}
