@@ -31,7 +31,7 @@
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js" data-no-instant></script>
     {% endif %}
 
-    {% if env.environment == "production" %}
+    {% if myProject.environment == "production" %}
     PRODUCTION
     <script src="/static/js/instantclick.min.js" data-no-instant></script>
     <script data-no-instant>InstantClick.init();</script>
