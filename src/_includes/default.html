@@ -19,19 +19,24 @@
   <body>
     {% include "./partials/navbar.html" %}
 
-    {{ content | safe }}
+    {{ layoutContent | safe }}
 
     {% include "./partials/footer.html" %}
 
-    <script src="/static/js/alpine.js"></script>
+    <script src="/static/js/alpine.js" data-no-instant></script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
       <!-- Needed only if you are using Netlify Identity feature -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js" data-no-instant></script>
     {% endif %}
 
+    {% if env.environment == "production" %}
+    PRODUCTION
     <script src="/static/js/instantclick.min.js" data-no-instant></script>
     <script data-no-instant>InstantClick.init();</script>
+    {% else %}
+    DEVELOPMENT
+    {% endif %}
   </body>
 </html>
