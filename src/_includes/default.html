@@ -33,12 +33,7 @@
     <script src="/static/js/alpine-turbo-drive-adapter.js" ></script>
     <script src="/static/js/alpine.js" ></script>
     <script src="/static/js/scripts.js" ></script>
-    <script>
-      window.addEventListener("scroll", function(){
-        var header = document.querySelector("nav");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
-    </script>
+
     {% if myProject.environment == "production" %}
       <script src="/static/js/instantclick.min.js" data-no-instant></script>
       <script data-no-instant>InstantClick.init();</script>
