@@ -1,1 +1,3 @@
-module.exports = process.env.ELEVENTY_ENV;
+module.exports = {
+  environment: process.env.ELEVENTY_ENV
+};
