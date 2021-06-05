@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "start": "npm-run-all --parallel css eleventy browsersync",
+    "rmrf": "rm -rf _site/",
+    "start": "npm-run-all rmrf --parallel css eleventy browsersync",
     "eleventy": "cross-env ELEVENTY_ENV=dev eleventy --watch",
     "css": "postcss src/static/css/tailwind.css --o _site/static/css/style.css --watch",
     "browsersync": "browser-sync start --server '_site' --files '_site' --port 8080 --no-notify --no-open",
     "debug": "set DEBUG=* & eleventy",
-    "build": "cross-env ELEVENTY_ENV=production NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css"
+    "build": "clear cross-env ELEVENTY_ENV=production NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
