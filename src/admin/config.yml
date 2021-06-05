@@ -16,8 +16,8 @@ local_backend: true
 collections:
   # Our pages e.g. About
   - name: "pages"
-    label: "Page"
-    folder: "pages"
+    label: "Pages"
+    folder: "src/pages"
     create: false # Change to true to allow editors to create new pages
     slug: "{{slug}}"
     fields:
