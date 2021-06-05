@@ -2,6 +2,7 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: master
+  local_backend: true
   # name: proxy
   # proxy_url: http://localhost:8081/api/v1
   ### enable below lines for github integration ###
@@ -39,15 +40,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
   - label: "Settings"
     name: "settings"
     editor:
