@@ -7,7 +7,7 @@
     "stylesheet": "postcss src/static/css/stylesheet.css --o _site/static/css/stylesheet.css --watch",
     "browsersync": "browser-sync start --server '_site' --files '_site' --port 8080 --no-notify --no-open",
     "debug": "set DEBUG=* & eleventy",
-    "build": "cross-env ELEVENTY_ENV=production NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css"
+    "build": "cross-env ELEVENTY_ENV=production NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css && cross-env NODE_ENV=production postcss src/static/css/stylesheet.css --o _site/static/css/stylesheet.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
