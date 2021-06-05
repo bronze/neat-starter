@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "rmrf": "rm -rf _site/",
-    "start": "npm-run-all rmrf --parallel css eleventy browsersync",
+    "start": "npm-run-all --parallel css eleventy browsersync",
     "eleventy": "cross-env ELEVENTY_ENV=dev eleventy --watch",
     "css": "postcss src/static/css/tailwind.css --o _site/static/css/style.css --watch",
     "browsersync": "browser-sync start --server '_site' --files '_site' --port 8080 --no-notify --no-open",
