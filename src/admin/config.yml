@@ -16,11 +16,14 @@ local_backend: true
 # publish_mode: editorial_workflow
 collections:
   # Our pages e.g. About
-  - name: "pages"
-    label: "Pages"
+  - name: pages
+    label: Pages
+    label_singular: 'Page'
     folder: "src/pages/"
-    create: false # Change to true to allow editors to create new pages
+    path: '{{slug}}/index'
     slug: "{{slug}}"
+    # path: "src/pages/{{slug}}"
+    create: true # Change to true to allow editors to create new pages
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Path, name: path, widget: string}
@@ -30,10 +33,18 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Body, name: body, widget: markdown }
+      - { label: layout, name: layout, widget: string, default: "'pages'" }
+      - widget: select
+        label: "template"
+        name: "templateEngineOverride"
+        multiple: false
+        create: false
+        options: ["njk, md", "njk", "md"]
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
+    label_singular: 'Post'
     create: true
     editor:
       preview: false

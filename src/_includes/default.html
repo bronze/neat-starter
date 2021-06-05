@@ -21,9 +21,8 @@
     {% include "./partials/nav.html" %}
     <section id="middle">
     {% if myProject.environment == "production" %}
-      <div>PRODUCTION</div>
+
     {% else %}
-      <div>DEVELOPMENT</div>
     {% endif %}
 
       {{ layoutContent | safe }}

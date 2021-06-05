@@ -1,7 +1,9 @@
 ---
+templateEngineOverride: njk
 layout: blog
 title: Blog
 path: /blog/
+slug: blog
 eleventyNavigation:
   key: Blog
   order: 3
