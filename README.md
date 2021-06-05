@@ -3,11 +3,12 @@
  - Instantclick: http://instantclick.io/
     - Needs https://github.com/SimoTod/alpine-turbo-drive-adapter (WTF?)
     - Issue: https://github.com/alpinejs/alpine/pull/568
+ - Pages layout chooser
+ - 11ty navigation plugin: https://www.11ty.dev/docs/plugins/navigation/
 
  TODO:
  - Dark Mode
- - Pages layout chooser?
- - 11ty navigation plugin: https://www.11ty.dev/docs/plugins/navigation/
+ - Pages layout chooser (automatic layout listing?)
 
 Blog @ https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss
 
