@@ -1,13 +1,12 @@
 module.exports = {
   mount: {
     '_site': { url: '/', static: false },
-    '_site/pages': { url: '/pages' },
     '_site/static/js': { url: '/static/js' },
     '_site/static/css': { url: '/static/css/' },
+    src: { url: '/src' },
   },
   plugins: [
     '@snowpack/plugin-postcss',
-    '@jadex/snowpack-plugin-tailwindcss-jit',
     [
       '@snowpack/plugin-run-script',
       {
@@ -18,18 +17,23 @@ module.exports = {
   ],
   packageOptions: {
     NODE_ENV: true,
-    knownEntrypoints: ["alpinejs", "alpine-turbo-drive-adapter", "instantclick"]
+    knownEntrypoints: ["alpinejs", "alpine-turbo-drive-adapter", "instantclick", "tailwindcss"]
   },
   buildOptions: {
-    clean: true,
+    clean: false,
     out: '_site',
   },
-  devOptions: {
-    open: 'none',
+  "devOptions": {
+    "open": "none",
+    "bundle": false,
+    "out": "_site"
   },
   optimize: {
+    entrypoints: ["index.html"],
     bundle: true,
     minify: true,
+    treeshake: true,
+    splitting: true,
     target: 'es2020',
   },
 };

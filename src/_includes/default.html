@@ -12,14 +12,12 @@
     {% endif %}
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
-    {% endif %}
+
   </head>
   <body>
 
     {% include "./partials/nav.html" %}
-    <section id="middle">
+    <section id="middle" class="p-6">
     {% if myProject.environment == "production" %}
 
     {% else %}
@@ -31,9 +29,6 @@
 
     <script type="module" src="/static/js/index.js"></script>
 
-    {% if myProject.environment == "production" %}
-      <script src="/static/js/instantclick.min.js" data-no-instant></script>
-      <script data-no-instant>InstantClick.init();</script>
-    {% endif %}
+
   </body>
 </html>

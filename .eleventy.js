@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
   });
-  eleventyConfig.addPassthroughCopy('./src/images');
+  eleventyConfig.addPassthroughCopy(true);
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
@@ -34,13 +34,14 @@ module.exports = function (eleventyConfig) {
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
-    passthroughFileCopy: true,
     dir: {
       input: "src",
+      output: '_site',
     },
+    passthroughFileCopy: true,
+    templateFormats: ['html', 'md', 'liquid'],
     htmlTemplateEngine: "njk",
-    // your normal config options
-    markdownTemplateEngine: "njk",
-    dataTemplateEngine: "njk"
+    dataTemplateEngine: "njk",
+    markdownTemplateEngine: "njk"
   };
 };
