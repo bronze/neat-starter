@@ -1,8 +1,6 @@
 module.exports = {
   mount: {
     '_site': { url: '/', static: false },
-    '_site/static/js': { url: '/static/js' },
-    '_site/static/css': { url: '/static/css/' },
     src: { url: '/src' },
   },
   plugins: [

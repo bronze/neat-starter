@@ -21,5 +21,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [ require('postcss-import'), require('tailwindcss'), require('autoprefixer') ]
 };

@@ -10,6 +10,8 @@
  TODO:
  - Snowpack/Parcel (better assets management)
  - Dark Mode (Nord Colors: https://www.nordtheme.com/#swatches)
+   - https://github.com/saleem-hadad/blog-tailwindcss-dark-mode
+   - https://saleem.dev/blog/tailwindcss-v2-enable-dark-mode-using-class/
  - Refactor css with newer variables options
  - Pages layout chooser (automatic layout listing?)
 
