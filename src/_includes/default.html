@@ -12,7 +12,6 @@
     {% endif %}
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css"/>
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
@@ -30,9 +29,7 @@
     </section>
     {% include "./partials/footer.html" %}
 
-    <script src="/static/js/alpine-turbo-drive-adapter.js" ></script>
-    <script src="/static/js/alpine.js" ></script>
-    <script src="/static/js/scripts.js" ></script>
+    <script type="module" src="/static/js/index.js"></script>
 
     {% if myProject.environment == "production" %}
       <script src="/static/js/instantclick.min.js" data-no-instant></script>

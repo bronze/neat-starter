@@ -8,6 +8,7 @@
  - Sticky (smaller) nav?
 
  TODO:
+ - Snowpack/Parcel (better assets management)
  - Dark Mode (Nord Colors: https://www.nordtheme.com/#swatches)
  - Refactor css with newer variables options
  - Pages layout chooser (automatic layout listing?)

@@ -1,3 +1,6 @@
+@import "./tailwind";
+
+
 nav {
   transition: 0.6s;
 

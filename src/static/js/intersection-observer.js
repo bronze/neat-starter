@@ -1,3 +1,4 @@
+// https://github.com/theNewDynamic/thenewdynamic.com/blob/7af5d4fa303c5b945935207541806d48ec81e5ed/layouts/article/single.html
 const pageHeading = document.querySelectorAll("#pageheading");
 
 let observer = new IntersectionObserver((entries) => {
